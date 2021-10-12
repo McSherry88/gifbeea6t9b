@@ -21,10 +21,15 @@
             
             <a-image
                     src="assets/asset.gif"
-                material.repeat:"11"
+             
                     look-at="[gps-camera]"
                     scale="1 1 1"
-                    gps-entity-place="latitude: 40.221475; longitude: -74.002997;"      
+                    gps-entity-place="latitude: 40.221475; longitude: -74.002997;"   
+                     <a-animation attribute="rotation"
+               dur="3000"
+               to="0 360 0"
+               repeat="indefinite">
+        </a-animation>
                 ></a-image>
     
 
