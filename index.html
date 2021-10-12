@@ -28,7 +28,20 @@
                     scale="1 1 1"
                     gps-entity-place="latitude: 40.221475; longitude: -74.002997;"
                 ></a-image>
-
+    
+ <a-entity  position="0 0 500" rotation="90 0 0" geometry="primitive: circle; radius: 3"
+          material="color: transparent">
+          
+           <a-animation attribute="rotation"
+               dur="10000"
+               easing="linear"
+               to="90 0 0"
+               repeat="indefinite"></a-animation>
+               
+           <a-entity rotation="-90 0 0" position="0 3 -0.5" 
+           geometry="primitive:plane;" material="side: double;shader:gif;src:assets/asset.gif;opacity:1">
+            </a-entity>
+     
             <a-camera gps-camera rotation-reader></a-camera>
         </a-scene>
     </body>
